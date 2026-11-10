@@ -1,0 +1,49 @@
+/**
+ * Styles for the Quick Links block.
+ *
+ * Defines the layout for the link list displayed in the block.
+ * Each link is rendered as a horizontal row with a logo/icon
+ * and a label, stacked vertically within a flex container.
+ *
+ * @package   block_quicklinks
+ * @author    Teaching and Learning Center (TLC, tlc@fh-ooe.at), FH Upper Austria
+ * @copyright 2026 Teaching and Learning Center, FH Upper Austria {@link http://www.fh-ooe.at/tlc}
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Outer wrapper: vertical stack of link items. */
+.block_quicklinks-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+/* Single link item: logo and label side by side. */
+.block_quicklinks-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: #f8f9fa;
+}
+
+/* Logo/icon: fixed size, scaled proportionally. */
+.block_quicklinks-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Link label button style. */
+.block_quicklinks-btn {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    white-space: nowrap;
+}
